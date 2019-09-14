@@ -40,7 +40,7 @@ class App extends Component {
         const message = event.target.getAttribute('name');
 
         if (message == "url") {
-            patt = new RegExp(/^((ftp|http|https):\/\/)?(www.)?(?!.*(ftp|http|https|www.))[a-zA-Z0-9_-]+(\.[a-zA-Z]+)+((\/)[\w#]+)*(\/\w+\?[a-zA-Z0-9_]+=\w+(&[a-zA-Z0-9_]+=\w+)*)?$/gm);
+            patt = new RegExp(/^((https?|ftp)\:\/\/)?([a-z0-9]{1})((\.[a-z0-9-])|([a-z0-9-]))*\.([a-z]{2,6})(\/?)$/);
         }
         if (patt.test(value)) {
             $(event.target).tooltip('hide');
@@ -212,7 +212,7 @@ class App extends Component {
 
             <div className="header" id="header">
                 <div className="container">
-                    <nav className="navbar navbar-expand-md p-0 navbar-light">
+                    <nav className="navbar navbar-expand-md pb-0 navbar-light">
                         <div className="container">
                             <button className="navbar-toggler" type="button" data-toggle="collapse"
                                     data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03"
@@ -419,7 +419,7 @@ class App extends Component {
                                         </div>
                                     </div>
 
-                                    <input className="form-control" placeholder="Укажите ссылку на сайт" name="url" required data-trigger="manual" data-toggle="tooltip" data-placement="right" title="Ссылка должна начинаться с http/https/www" onChange={this.validateText} />
+                                    <input className="form-control" placeholder="Укажите ссылку на сайт" name="url" required data-trigger="manual" data-toggle="tooltip" data-placement="right" title="Ссылка должна начинаться с http:// или https:// или www." onChange={this.validateText} />
 
                             </div>
                         </div>
