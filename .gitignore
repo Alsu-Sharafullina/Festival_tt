@@ -5,10 +5,6 @@
 # Node
 node_modules
 
-# Dist & test
-test
-dist
-
 # BD, logs
 *.log
 *.sql
@@ -25,4 +21,3 @@ Thumbs.db
 Desktop.ini
 .DS_Store*
 ehthumbs.db
-Icon?
