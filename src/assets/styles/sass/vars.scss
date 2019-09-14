@@ -1,0 +1,36 @@
+$white: #fff;
+$black: #1b1b1b;
+$gray: #7f7f7f;
+$light_gray: #ececec;
+$yellow: #ffbf00;
+$light_yellow: #ffffe0;
+$yellow_brown: #806000;
+$aquamarine : #7FFFD4;
+$radius_sm: 2px;
+$shadow: 0px 0px 6px rgba(0,0,0,0.5);
+
+$sizes: () !default;
+// stylelint-disable-next-line scss/dollar-variable-default
+$sizes: map-merge(
+        (
+            25: 25%,
+            30: 30%,
+            50: 50%,
+            75: 75%,
+            100: 100%,
+            auto: auto
+        ),
+        $sizes
+);
+
+
+$breakpoint_xl: 1330px;
+$breakpoint_lg: 992px;
+$breakpoint_md: 768px;
+$breakpoint_sm: 575px;
+$breakpoint_xs: 0;
+
+
+
+
+

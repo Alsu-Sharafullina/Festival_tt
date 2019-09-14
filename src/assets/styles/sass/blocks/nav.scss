@@ -1,0 +1,90 @@
+.header {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+
+  box-shadow: $shadow;
+
+  &:before {
+    position: absolute;
+    content: '';
+    display: block;
+    width: 100%;
+    height: 0;
+    border-bottom: 12px solid $yellow;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+  }
+
+  &.fixed {
+    height: auto;
+    position: fixed;
+    background: $light_yellow;
+  }
+
+  @media (max-width: $breakpoint_md) {
+      padding: 1.2rem 0;
+      background: $light_yellow;
+  }
+}
+
+.navbar {
+
+  @media (max-width: $breakpoint_md) {
+    background-color: $light_yellow;
+  }
+}
+
+.navbar-nav {
+
+  @media (max-width: $breakpoint_md) {
+    margin-top: .5rem;
+  }
+}
+
+.navbar-light .navbar-toggler {
+  border-color: $gray;
+  outline: none;
+}
+
+.nav-item {
+  padding: .7rem 1.2rem;
+
+  &.active {
+    color: $white;
+    background-color: $yellow;
+    text-transform: uppercase;
+  }
+
+  @media (max-width: $breakpoint_md) {
+    padding: .7rem;
+  }
+}
+
+.nav-link {
+  display: inline-block;
+  color: $black;
+
+  &:hover {
+    text-decoration: none;
+    color: $yellow;
+  }
+
+  &.active {
+    color: $white;
+  }
+
+  @media (max-width: $breakpoint_md) {
+    padding: 0;
+  }
+
+}
+
+.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active {
+  color: $white;
+}
+

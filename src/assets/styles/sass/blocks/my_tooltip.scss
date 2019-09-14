@@ -1,0 +1,16 @@
+.tooltip-inner {
+  min-width: 200px;
+  padding: .5rem .8rem 1.5rem;
+  text-align: left;
+  background-color: $yellow_brown;
+  color: $yellow;
+}
+
+.tooltip.bs-tooltip-right .arrow:before {
+  border-right-color: $yellow_brown;
+}
+
+.bs-tooltip-auto[x-placement^=left] .arrow:before, .bs-tooltip-left .arrow:before {
+  border-left-color: $yellow_brown;
+}
+

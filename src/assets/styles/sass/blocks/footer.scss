@@ -1,0 +1,19 @@
+.footer {
+  height: 100px;
+  background-color: $yellow;
+
+  @media (max-width: $breakpoint_sm) {
+    height: 60px;
+  }
+}
+
+.footer__title {
+  color: $white;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  line-height: 1;
+}
+
+.footer__sub {
+  font-size: .4rem;
+}

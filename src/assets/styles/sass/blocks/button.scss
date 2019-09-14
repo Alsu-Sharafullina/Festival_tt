@@ -1,0 +1,41 @@
+.buttons {
+    padding-bottom: 6rem;
+}
+
+.btn {
+  border: 2px solid $yellow;
+  color: $yellow;
+
+  font-size: 1.8rem;
+  font-weight: 700;
+  outline: none;
+
+  &:hover {
+    color: $gray;
+    background-color: #ffffe0;
+  }
+
+  @media (max-width: $breakpoint_lg) {
+    font-size: 1.4rem;
+
+    @media (max-width: $breakpoint_sm) {
+      font-size: .7rem;
+    }
+
+  }
+
+}
+
+.show__btn {
+  width: 30px;
+  margin-right: 1.2rem;
+}
+
+.btn__detail {
+  border: 2px solid $white;
+  color: $white;
+
+  font-size: 1.8rem;
+  font-weight: 700;
+  outline: none;
+}

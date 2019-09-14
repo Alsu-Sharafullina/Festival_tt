@@ -1,0 +1,62 @@
+@import "vars";
+
+/* Default styles */
+
+body {
+  margin: 0 auto;
+  font-family: 'Fira Sans', sans-serif;
+  font-size: 13px;
+  line-height: 1.6;
+  color: $gray;
+  background-color: $white;
+}
+
+.container {
+  width: 100%;
+/*  max-width: 1920px;*/
+  margin: 0 210px;
+  padding: 0 15px;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  user-select: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
+
+/* Bootstrap */
+@import "../../../../node_modules/bootstrap/scss/functions";
+@import "../../../../node_modules/bootstrap/scss/variables";
+@import "../../../../node_modules/bootstrap/scss/mixins";
+@import "../../../../node_modules/bootstrap/scss/grid";
+@import "../../../../node_modules/bootstrap/scss/bootstrap-reboot";
+@import "../../../../node_modules/bootstrap/scss/navbar";
+@import "../../../../node_modules/bootstrap/scss/transitions";
+@import "../../../../node_modules/bootstrap/scss/nav";
+@import "../../../../node_modules/bootstrap/scss/buttons";
+@import "../../../../node_modules/bootstrap/scss/forms";
+@import "../../../../node_modules/bootstrap/scss/utilities";
+@import "../../../../node_modules/bootstrap/scss/card";
+@import "../../../../node_modules/bootstrap/scss/tooltip";
+
+
+/* Blocks */
+@import "blocks/nav";
+@import "blocks/festival";
+@import "blocks/speakers";
+@import "blocks/crossImg";
+@import "blocks/cards";
+@import "blocks/button";
+@import "blocks/paticipants";
+@import "blocks/contacts";
+@import "blocks/footer";
+@import "blocks/my_tooltip";
+
+
+/* Vendor libs */

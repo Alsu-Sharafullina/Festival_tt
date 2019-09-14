@@ -1,0 +1,92 @@
+.participants {
+  height: 950px;
+  background-color: $yellow;
+
+  @media (max-width: $breakpoint_sm) {
+    height: auto;
+  }
+}
+
+.participant__title {
+  padding: 2.3rem 0;
+
+  font-size: 2rem;
+  color: $white;
+  font-weight: 700;
+  text-align: center;
+
+  @media (max-width: $breakpoint_sm) {
+    padding: 1rem 0;
+  }
+
+
+}
+
+
+.nomination__list {
+  padding-left: 0;
+}
+
+.nomination__list > li {
+  margin-left: 20px;
+  list-style: none;
+
+  &:before {
+    content: '- ';
+    margin-left: -20px;
+  }
+}
+
+.nomination__title, .speakers__add__title {
+  padding-bottom: 1rem;
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+.ul__name {
+  font-weight: 700;
+}
+
+.form-control {
+  margin-bottom: 1.5rem;
+  border-radius: 0;
+  color: $yellow;
+
+  &::placeholder {
+    color: $yellow;
+  }
+}
+
+.file-form {
+  cursor: pointer;
+}
+
+.clip__item {
+  width: 35px;
+  height: 35px;
+
+  position: absolute;
+  right: 1rem;
+  top: 315px;
+
+  border-left: 1px solid #ced4da;
+  background-color: $white;
+}
+
+.clip__icon {
+  width: 20px;
+  height: 20px;
+  fill: $yellow;
+}
+
+.paper__bg {
+  width: 32px;
+  height: 32px;
+
+  background-color: $white;
+}
+
+.hidden {
+  display: none;
+}
+
